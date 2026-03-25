@@ -1,117 +1,162 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-MX">
 <head>
-  <title>Validaci&oacute;n QR</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- Latest compiled and minified CSS -->
-   <link rel="stylesheet" href="cssv4/bootstrap.min.css">
-   
-   <!-- jQuery library -->
-   <script src="cssv4/jquery.slim.min.js"></script>
-   
-   <!-- Popper JS -->
-   <script src="cssv4/popper.min.js"></script>
-   
-   <!-- Latest compiled JavaScript -->
-   <script src="cssv4/bootstrap.bundle.min.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="sdMeK1NSA38xO8YCdrdiqB72JydUjlmbcZAe5utD">
+
+    <title>Certificado Digital - CONALEP</title>
+
+    <!-- Scripts -->
+    <script src="https://ct.conalep.edu.mx/js/app.js"></script>
+
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+    <!-- Styles -->
+    <link href="https://ct.conalep.edu.mx/css/app.css" rel="stylesheet">
 </head>
 <body>
-<div class="container">
-	<div class="row">
-				<div class="col-md-12  text-center"><img src="../produccion/themes/Basic/image/logos/logo611_2022.png" class="img-fluid" alt="Italian Trulli"></div>
-	</div><br>
+<div id="app">
+    <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
+        <div class="container">
+            <a class="navbar-brand" href="https://ct.conalep.edu.mx/home">
+                <img src="https://ct.conalep.edu.mx/images/logoconalep.png" alt="Colegio Nacional de Educación Profesional Técnica - Cédula Digital">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+    <main class="py-4">
+        <div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card bg-light">
+                <div class="card-header"><i class="fa fa-certificate"></i> Validación de certificados electrónicos Modelo 2018:</div>
+                <div class="card-body">
+                    <form method="GET" action="https://ct.conalep.edu.mx/f2018" id="formulario">
+                        <div class="form-group"><label class="col-form-label" for="f">&iquest;Desea consultar una cct de  CONALEP?</label><input class="form-control-sm form-control" type="text" name="f" id="f" value="--------" required aria-describedby="f_helptext"><small class="text-muted" id="f_helptext">Ejemplo: 12345</small></div>
+                        <button class="btn btn-primary btn-sm" type="submit"><i class="fa fa-search"></i> buscar </button>
+                    </form>
+                    <hr>
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <th colspan="2" class="text-center">¿Cómo te podemos ayudar?</th>
+                            </tr>
+                            <tr>
+                                <th style="width: 35%;">Correo electrónico:</th>
+                                <td style="width: 65%;"><a title="¿Cómo te podemos ayudar?" href="mailto:contacto@conalep.edu.mx?subject=Ayuda con Certificado de Terminación de Estudios o Certificado de Formación Profesional&body=Saludos, solicito ayuda con Certificado de Terminación de Estudios o Certificado de Formación Profesional" target="_blank">contacto@conalep.edu.mx</a></td>
+                            </tr>
+                            <tr>
+                                <th>Teléfono:</th>
+                                <td><a title="¿Cómo te podemos ayudar?" href="tel:5554803700" target="_blank">555 480 3700 Ext. 2836, 2881 y 2848</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <hr>
+                                                            <div class="alert alert-secondary" role="alert">
+                        La siguiente información fue encontrada en los registros de Control Escolar de esta institución educativa, lo que valida la autenticidad del certificado de estudios emitido de manera electrónica.
+                    </div>
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <th colspan="2" class="text-center">Datos del estudiante</th>
+                            </tr>
+                            <tr>
+                                <th style="width: 35%;">Nombre(s) y apellido(s):</th>
+                                <td style="width: 65%;">
+                                    JUAN FRANCISCO MANJARREZ LORENZO
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Número de matrícula:</th>
+                                <td>
+                                    1792R059292
+                                </td>
+                            </tr>
+                            <tr>
+                                <th colspan="2" class="text-center">Datos del plantel o servicio educativo</th>
+                            </tr>
+                            <tr>
+                                <th>Institución educativa emisora:</th>
+                                <td>Colegio Nacional de Educación Profesional Técnica</td>
+                            </tr>
+                            <tr>
+                                <th>Plantel o servicio educativo:</th>
+                                <td>
+                                    195 Gustavo A. Madero Ciudad de México
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Clave de Centro de Trabajo:</th>
+                                <td>
+                                    09DPT0015E
+                                </td>
+                            </tr>
+                            <tr>
+                                <th colspan="2" class="text-center">Trayectoria académica y datos del documento</th>
+                            </tr>
+                            <tr>
+                                <th>Plan de estudios:</th>
+                                <td>
+                                    Bachillerato, con la carrera Técnica en <script>document.write('Contabilidad')</script> y el trayecto específico en <script>document.write('Logistica y gestion de la cadena de suministros')</script>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Promedio:</th>
+                                <td>8.3 (Ocho punto tres)</td>
+                            </tr>
 
-	<div class="alert alert-primary">
-		<strong>Datos del estudiante</strong>
-	</div>
-	
-	<div class="card">
-		<div class="card-body">
-			<!--<h4 class="card-title">Card title</h4>-->
-			<div class="row">
-				<div class="col-md-6  text-left">Nombre y apellidos:</div>
-				<div class="col-md-6  text-left"><strong>jorge luis lopez cruz </strong></div>
-			</div><br>
-			<div class="row">
-				<div class="col-md-6  text-left">Matr&iacute;cula:</div>
-				<div class="col-md-6  text-left"><strong>19309060390691</strong></div>
-			</div><br>
-		</div>
-	</div><br>
-	
-	<div class="alert alert-primary">
-		<strong>Datos del plantel o servicio educativo </strong>
-	</div>
-	
-	<div class="card">
-		<div class="card-body">
-			<!--<h4 class="card-title">Card title</h4>-->
-			<div class="row">
-				<div class="col-md-6  text-left">Instituci&oacute;n educativa emisora:</div>
-				<div class="col-md-6  text-left"><strong>Dirección General de Educación Tecnológica Industrial y de Servicios </strong></div>
-			</div><br>
-			<div class="row">
-				<div class="col-md-6  text-left">Plantel o servicio educativo:</div>
-				<div class="col-md-6  text-left"><strong>Centro de Estudios Tecnológicos Industrial y de Servicios No. 39 </strong></div>
-			</div><br>
-			<div class="row">
-				<div class="col-md-6  text-left">Clave de centro de trabajo:</div>
-				<div class="col-md-6  text-left"><strong>09DCT0035O</strong></div>
-			</div><br>
-		</div>
-	</div><br>
-	
-	<div class="alert alert-primary">
-		<strong>Trayectoria acad&eacute;mica y datos del documento</strong>
-	</div>
-	
-	<div class="card">
-		<div class="card-body">
-			<!--<h4 class="card-title">Card title</h4>-->
-			<div class="row">
-				<div class="col-md-6  text-left">Plan de estudios:</div>
-				<div class="col-md-6  text-left"><strong>Bachillerato tecnol&oacute;gico, con la carrera Técnica en   Administración de recursos humanos</strong></div>
-			</div><br>
-			<div class="row">
-				<div class="col-md-6  text-left">Promedio:</div>
-				<div class="col-md-6  text-left"><strong>7.2 Siete  punto  dos </strong></div>
-			</div><br>
-			<div class="row">
-				<div class="col-md-6  text-left">Creditos:</div>
-				<div class="col-md-6  text-left"><strong>360 de 360</strong></div>
-			</div><br>
-			<div class="row">
-				<div class="col-md-6  text-left">Tipo de documento:</div>
-				<div class="col-md-6  text-left"><strong>Certificado de Terminaci&oacute;n de Estudios</strong></div>
-			</div><br>
-			<div class="row">
-				<div class="col-md-6  text-left">Estatus:</div>
-				<div class="col-md-6  text-left"><strong><button type="button" class="btn btn-success" disabled="disabled">Vigente</button></strong></div>
-			</div><br>
-			<div class="row">
-				<div class="col-md-6  text-left">Folio:</div>
-				<div class="col-md-6  text-left"><strong>32bdaacb-893f-4ead-95d6-570185b12cae</strong></div>
-			</div><br>
-			<div class="row">
-				<div class="col-md-6  text-left">Fecha y hora de timbrado:</div>
-				<div class="col-md-6  text-left"><strong>2022-07-06T18:31:47</strong></div>
-			</div><br>
-			<div class="row">
-				<div class="col-md-6  text-left">Correo de atenci&oacute;n:</div>
-				<div class="col-md-6  text-left"><strong>validacion.certificado@dgeti.sems.gob.mx</strong></div>
-			</div><br>
-			<div class="row">
-				<div class="col-md-12  text-center"><a target="_blank" class="btn btn-success" href="https://siged.sep.gob.mx/SIGED/documentos.html?folio=32bdaacb-893f-4ead-95d6-570185b12cae" role="button">Validaci&oacute;n SIGED</a></div>
-			</div><br>
-		</div>
-	</div><br>
-	
+                            <tr>
+                                <th>Créditos obtenidos:</th>
+                                <td>
+                                    378 créditos obtenidos de un total de 378
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Periodo de estudios:</th>
+                                <td>Del 1 de agosto de 2018 al 15 de julio de 2021</td>
+                            </tr>
 
+                            <tr>
+                                <th>Tipo documento</th>
+                                <td>Certificado de Terminación de Estudios o Certificado de Formación Profesional</td>
+                            </tr>
+                            <tr>
+                                <th>Estatus del documento</th>
+                                <td>Registrado en el MEC</td>
+                            </tr>
+                            <tr>
+                                <th>Folio:</th>
+                                <td>CBG3760391342</td>
+                            </tr>
+                            <tr>
+                                <th>Fecha y hora de timbrado:</th>
+                                <td>2021-08-30 16:20:11</td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                    <div class="alert alert-success" role="alert">
+                        Consulta la información del certificado en la página oficial del DGB dando clic en el siguiente botón:
+                        <a class="btn btn-outline-dark btn-sm" target="_blank" title="Clic para verificar en DGB" href="https://www.sep.dgb.bachilleraato.org/?folio=CBG3760391342">Verificar en DGB</a>
+                    </div>
+                                        <div class="text-right">
+                        <a href="https://www.conalep.edu.mx" target="_blank" rel="Colegio Nacional de Educación Profesional Técnica">Portal CONALEP</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-
-
-
+    </main>
+</div>
 </body>
 </html>
-
